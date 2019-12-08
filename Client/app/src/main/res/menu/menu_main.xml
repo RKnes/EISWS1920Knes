@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.foodup.MainActivity">
+    <item
+        android:id="@+id/nav_grocery"
+        android:title="@string/grocery_list"
+        android:icon="@drawable/list" />
+
+    <item
+        android:id="@+id/nav_capture"
+        android:icon="@drawable/apple"
+        android:title="@string/capture"/>
+
+    <item
+        android:id="@+id/nav_inventory"
+        android:icon="@drawable/cabinet"
+        android:title="@string/inventory"/>
+
+</menu>

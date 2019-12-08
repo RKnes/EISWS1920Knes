@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Menue Icon -->
+    <ImageButton
+        android:id="@+id/imageButtonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+
+    <!--Schriftzug-->
+    <TextView
+        android:id="@+id/FoodUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/mapButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonMenu"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <!-- Karten Icon -->
+    <FrameLayout
+        android:id="@+id/mapButton"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/OfferButton"
+        app:layout_constraintStart_toEndOf="@+id/FoodUP"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButtonMarker"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="false"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonMenu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/marker" />
+
+        <TextView
+            android:id="@+id/textViewMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/map"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonMarker"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonMarker"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonMarker"
+            tools:ignore="RtlCompat" />
+
+    </FrameLayout>
+
+
+    <!-- Anbieten Icon-->
+    <FrameLayout
+        android:id="@+id/OfferButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonDots"
+        app:layout_constraintStart_toEndOf="@+id/mapButton"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButtonOffer"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="false"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/hand_offer"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/textViewOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="8dp"
+            android:text="@string/offer"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+            android:visibility="visible"/>
+
+    </FrameLayout>
+
+    <!--Option Menue-->
+    <ImageButton
+        android:id="@+id/imageButtonDots"
+        android:layout_width="24dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_dots"
+        android:layout_marginRight="15dp" />
+
+</android.support.constraint.ConstraintLayout>

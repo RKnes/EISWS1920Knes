@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FoodUP</string>
+    <string name="grocery_list">Einkaufsliste</string>
+    <string name="inventory">Inventar</string>
+    <string name="capture">Erfassen</string>
+    <string name="offer">Anbieten</string>
+    <string name="map">Karte</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="description_label">Bezeichnung</string>
+    <string name="amount">Amount</string>
+    <string name="entries">Einträge</string>
+    <string name="description_product">Bezeichnung</string>
+</resources>
