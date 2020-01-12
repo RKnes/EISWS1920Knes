@@ -33,7 +33,7 @@ public class sglFoodList {
         return this.posts;
     }
 
-    public void setPublicList(ArrayList<Product> list){
+    public void setProductList(ArrayList<Product> list){
         this.productList = list;
     }
 

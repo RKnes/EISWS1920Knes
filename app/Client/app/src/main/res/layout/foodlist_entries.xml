@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
-        android:id="@+id/productImage"
+        android:id="@+id/sglProductImage"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="8dp"
@@ -20,51 +20,51 @@
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/productName"
+        android:id="@+id/sglProductName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/description_product"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/productImage"
+        app:layout_constraintStart_toEndOf="@+id/sglProductImage"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="8dp" />
 
     <TextView
-        android:id="@+id/additionalText"
+        android:id="@+id/sglAdditionalText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="von "
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/productImage"
-        app:layout_constraintTop_toBottomOf="@+id/productName"
+        app:layout_constraintStart_toEndOf="@+id/sglProductImage"
+        app:layout_constraintTop_toBottomOf="@+id/sglProductName"
         android:layout_marginLeft="8dp" />
 
     <TextView
-        android:id="@+id/productBrand"
+        android:id="@+id/sglProductBrand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Marke"
         android:textColor="@color/colorPrimary"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/additionalText"
-        app:layout_constraintTop_toBottomOf="@+id/productName" />
+        app:layout_constraintStart_toEndOf="@+id/sglAdditionalText"
+        app:layout_constraintTop_toBottomOf="@+id/sglProductName" />
 
     <TextView
-        android:id="@+id/amountLabel"
+        android:id="@+id/sglAmountLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:text="Menge:"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/productOpt"
+        app:layout_constraintTop_toBottomOf="@+id/sglProductOpt"
         android:layout_marginRight="32dp" />
 
     <TextView
-        android:id="@+id/productAmount"
+        android:id="@+id/sglProductAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -73,13 +73,13 @@
         android:textColor="@color/colorPrimary"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/amountLabel"
-        app:layout_constraintTop_toBottomOf="@+id/productOpt"
+        app:layout_constraintStart_toEndOf="@+id/sglAmountLabel"
+        app:layout_constraintTop_toBottomOf="@+id/sglProductOpt"
         android:layout_marginLeft="4dp"
         android:layout_marginRight="8dp" />
 
     <ImageView
-        android:id="@+id/optimizationSign"
+        android:id="@+id/sglOptimizationSign"
         android:layout_width="17dp"
         android:layout_height="17dp"
         android:layout_marginTop="10dp"
@@ -91,7 +91,7 @@
         android:layout_marginRight="8dp" />
 
     <TextView
-        android:id="@+id/productOpt"
+        android:id="@+id/sglProductOpt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -99,8 +99,8 @@
         android:textColor="#ccaa22"
         android:textSize="12sp"
         android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/productImage"
-        app:layout_constraintTop_toBottomOf="@+id/productBrand"
+        app:layout_constraintStart_toEndOf="@+id/sglProductImage"
+        app:layout_constraintTop_toBottomOf="@+id/sglProductBrand"
         android:layout_marginLeft="8dp" />
 
 </android.support.constraint.ConstraintLayout>

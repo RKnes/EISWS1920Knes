@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "273277438419",
+    "firebase_url": "https://foodup-abb79.firebaseio.com",
+    "project_id": "foodup-abb79",
+    "storage_bucket": "foodup-abb79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273277438419:android:346000c99b682452f34726",
+        "android_client_info": {
+          "package_name": "com.example.foodup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273277438419-of75qqg3fjj10a5dlonr57bklhribs8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfzEzlKk0SJWT8aNlWYWVuyT9JQU4ZF5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273277438419-of75qqg3fjj10a5dlonr57bklhribs8i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,4 @@
+package com.example.foodup;
 public class WastedFood{
     private int id;
     private int wFood;

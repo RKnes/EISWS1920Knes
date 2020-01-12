@@ -1,0 +1,38 @@
+
+einkaufsliste{
+    id: Number,
+    userID: Number,
+    products: [{
+        ean: String,
+        name: String,
+        category: String,
+        label: String,
+        price: Number
+    }],
+    token: String,
+    coordinates:{
+        latitude: Number,
+        longitude: Number
+    }
+}
+
+potentialUser[{
+    id: Number,
+    products: [{
+        ean: String,
+        name: String,
+        category: String,
+        label: String,
+        status: String
+    }],
+    coordinates: {
+        latitude: Number,
+        longitude: Number
+    }
+}]
+
+wastedFoods[{
+    ean: String,
+    name: String,
+    wastedAmount: Number
+}]

@@ -4,7 +4,10 @@ import java.util.ArrayList;
 
 public class Optimizer {
 
+
+    // *******************************************************************
     //    Berechnet den durchschnittlichen Verbrauch eines Lebensmittels
+    // *******************************************************************
 
     private double calcAverageWaste(Float amount,Float count){
         double averageWaste = amount/count; // Formel: Arithmetisches Mittel
@@ -14,9 +17,12 @@ public class Optimizer {
 
 
 
+
+    // *******************************************************************
     //    Überprüft, ob für mind. ein Produkt eine Optimierung vorliegt.
     //    Falls ein Produkt gefunden wurde bricht der Suchvorgang
     //    ab und eine Einkaufsliste kann optimiert werden.
+    // *******************************************************************
 
     public boolean checkOptimizationInList(ArrayList<Product> productList, ArrayList<WastedFood> wastedFoods){
         boolean canBeOptimized = false;
@@ -25,7 +31,7 @@ public class Optimizer {
 
             // Bei einem gefundenen zu optimierenden Produkt, gilt die
             // Einkaufsliste als optimierbar und weitere Überprüfungen sind nicht nötig.
-            if(checkOptimization(product,wastedGroceries)){
+            if(checkOptimization(product,wastedFoods)){
                 canBeOptimized = true;
                 break;
             }
@@ -35,8 +41,12 @@ public class Optimizer {
     }
 
 
+
+
+    // *********************************************************************************
     //    Bezieht die Einträge eines Produktes innerhalb der Lebensmittelverschwendung
     //    und berechnet anschließend den Wert der durchschnittlichen Verschwendung
+    // *********************************************************************************
 
     public double getAverageWaste(Product product,ArrayList<WastedFood> wastedFoods){
         int count = 0;              // Anzahl der Einträge des verschwendeten Produkts.
@@ -47,9 +57,9 @@ public class Optimizer {
         // Lebensmittelverschwendung hat und die Menge.
         for(int i = 0;i < wastedFoods.size();i++){
             WastedFood singleEntry = wastedFoods.get(i);
-            if(product.getId() == singleEntry.getId()){
+            if(product.getID() == singleEntry.getId()){
                 count += 1;
-                wastedAmount += singleEntry.getWasted();
+                wastedAmount += singleEntry.getWastedFood();
             }
         }
         // Falls das Produkt mind. ein Eintrag in der Lebensmittelverschwendung hat
@@ -63,7 +73,10 @@ public class Optimizer {
 
 
 
-    //    Überprüft ob für mind. ein Produkt eine Optimierung vorliegt.
+
+    // ******************************************************************
+    //    Überprüfung, ob für mind. ein Produkt eine Optimierung vorliegt.
+    // ******************************************************************
 
     public boolean checkOptimization(Product product,ArrayList<WastedFood> wastedFoods) {
         boolean canBeOptimized = false;
@@ -78,7 +91,7 @@ public class Optimizer {
     }
 
 
-    //
+    // Optimierte
 
     public int getOptimizedAmount(int amount,double averageWaste){
         int optimizedAmount = 0;

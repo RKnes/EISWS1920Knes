@@ -10,4 +10,9 @@
         android:id="@+id/delete"
         android:title="Löschen"
         android:visible="true" />
+
+    <item
+        android:id="@+id/optimize"
+        android:title="Optimieren"
+        android:visible="false"/>
 </menu>

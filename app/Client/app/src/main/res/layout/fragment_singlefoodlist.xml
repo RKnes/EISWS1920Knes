@@ -24,7 +24,7 @@
         android:layout_marginStart="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Bezeichnung"
+        android:text="Einkauf"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description_label_sgl"
@@ -60,10 +60,10 @@
         android:layout_height="24dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/options"
-        android:layout_marginRight="16dp" />
+        app:srcCompat="@drawable/options" />
 
 </android.support.constraint.ConstraintLayout>
